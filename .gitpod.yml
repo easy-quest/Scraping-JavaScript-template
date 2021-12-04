@@ -1,0 +1,19 @@
+tasks:
+  - init: |
+      echo 'TODO: build project'
+      python -m pip install --upgrade pip
+      python -m pip install --upgrade pip setuptools wheel pip-tools robotframework
+      python -m pip install --upgrade -r requirements.txt
+      sudo apt-get install lynx -y
+    command: |
+      echo 'TODO: start app'
+      # printf "#!/usr/bin/env bash \nexport z='EasyQuest'" > .envrc;direnv allow
+      echo 'TODO:Good!!!'
+
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-toolsai.jupyter
+    - d-biehl.robotcode
+    - magicstack.magicpython
+    - formulahendry.code-runner
